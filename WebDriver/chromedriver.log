@@ -1,0 +1,130 @@
+[0.000][INFO]:      ChromeDriver 26.0.1383.0 D:\QAAutomationSVN\LanitSvn\FZ_223\workspace\WebDriver\target\classes\chromedriver.exe
+[0.992][FINE]:      Initializing session with capabilities {
+   "browserName": "chrome",
+   "chrome.switches": [ "--disable-popup-blocking" ],
+   "platform": "ANY",
+   "version": ""
+}
+
+[0.992][INFO]:      Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --enable-logging --log-level=1 --ignore-certificate-errors --disable-popup-blocking about:blank
+[1.988][INFO]:      Connected to Chrome successfully. Version: 27.0.1453.116
+[2.002][FINE]:      Command received (/session/c8ad60f1d70236eb50289de098938cbd)
+[2.002][FINE]:      Command finished (/session/c8ad60f1d70236eb50289de098938cbd) with response {
+   "sessionId": "c8ad60f1d70236eb50289de098938cbd",
+   "status": 0,
+   "value": {
+      "acceptSslCerts": false,
+      "applicationCacheEnabled": false,
+      "browserConnectionEnabled": false,
+      "browserName": "chrome",
+      "chrome.chromedriverVersion": "26.0.1383.0",
+      "cssSelectorsEnabled": true,
+      "databaseEnabled": false,
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "locationContextEnabled": false,
+      "nativeEvents": true,
+      "platform": "windows",
+      "rotatable": false,
+      "takesScreenshot": true,
+      "version": "27.0.1453.116",
+      "webStorageEnabled": true
+   }
+}
+
+[2.030][FINE]:      Command received (/session/c8ad60f1d70236eb50289de098938cbd/window/current/maximize) with params {
+   "windowHandle": "current"
+}
+
+[2.030][FINER]:     Waiting for all views to stop loading...
+[2.031][FINER]:     Done waiting for all views to stop loading
+[2.039][FINER]:     Waiting for all views to stop loading...
+[2.041][FINER]:     Done waiting for all views to stop loading
+[2.041][FINE]:      Command finished (/session/c8ad60f1d70236eb50289de098938cbd/window/current/maximize) with response {
+   "sessionId": "c8ad60f1d70236eb50289de098938cbd",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[2.052][FINE]:      Command received (/session/c8ad60f1d70236eb50289de098938cbd/timeouts/implicit_wait) with params {
+   "ms": 10000
+}
+
+[2.052][FINER]:     Waiting for all views to stop loading...
+[2.052][FINER]:     Done waiting for all views to stop loading
+[2.052][FINER]:     Waiting for all views to stop loading...
+[2.052][FINER]:     Done waiting for all views to stop loading
+[2.052][FINE]:      Command finished (/session/c8ad60f1d70236eb50289de098938cbd/timeouts/implicit_wait) with response {
+   "sessionId": "c8ad60f1d70236eb50289de098938cbd",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[2.096][FINE]:      Command received (/session/c8ad60f1d70236eb50289de098938cbd/elements) with params {
+   "using": "tag name",
+   "value": "div"
+}
+
+[2.096][FINER]:     Waiting for all views to stop loading...
+[2.097][FINER]:     Done waiting for all views to stop loading
+[12.099][FINER]:    Waiting for all views to stop loading...
+[12.099][FINER]:    Done waiting for all views to stop loading
+[12.099][FINE]:     Command finished (/session/c8ad60f1d70236eb50289de098938cbd/elements) with response {
+   "sessionId": "c8ad60f1d70236eb50289de098938cbd",
+   "status": 0,
+   "value": [  ]
+}
+
+[12.105][FINE]:     Command received (/session/c8ad60f1d70236eb50289de098938cbd/element) with params {
+   "using": "tag name",
+   "value": "div"
+}
+
+[12.105][FINER]:    Waiting for all views to stop loading...
+[12.105][FINER]:    Done waiting for all views to stop loading
+[22.121][FINER]:    Waiting for all views to stop loading...
+[22.121][FINER]:    Done waiting for all views to stop loading
+[22.121][WARNING]:  Command finished (/session/c8ad60f1d70236eb50289de098938cbd/element) with response {
+   "sessionId": "c8ad60f1d70236eb50289de098938cbd",
+   "status": 7,
+   "value": {
+      "message": "The element could not be found"
+   }
+}
+
+[22.627][FINE]:     Command received (/session/c8ad60f1d70236eb50289de098938cbd/elements) with params {
+   "using": "tag name",
+   "value": "div"
+}
+
+[22.627][FINER]:    Waiting for all views to stop loading...
+[22.627][FINER]:    Done waiting for all views to stop loading
+[32.682][FINER]:    Waiting for all views to stop loading...
+[32.682][FINER]:    Done waiting for all views to stop loading
+[32.682][FINE]:     Command finished (/session/c8ad60f1d70236eb50289de098938cbd/elements) with response {
+   "sessionId": "c8ad60f1d70236eb50289de098938cbd",
+   "status": 0,
+   "value": [  ]
+}
+
+[32.688][FINE]:     Command received (/session/c8ad60f1d70236eb50289de098938cbd/element) with params {
+   "using": "tag name",
+   "value": "div"
+}
+
+[32.688][FINER]:    Waiting for all views to stop loading...
+[32.689][FINER]:    Done waiting for all views to stop loading
+[42.746][FINER]:    Waiting for all views to stop loading...
+[42.746][FINER]:    Done waiting for all views to stop loading
+[42.746][WARNING]:  Command finished (/session/c8ad60f1d70236eb50289de098938cbd/element) with response {
+   "sessionId": "c8ad60f1d70236eb50289de098938cbd",
+   "status": 7,
+   "value": {
+      "message": "The element could not be found"
+   }
+}
+
