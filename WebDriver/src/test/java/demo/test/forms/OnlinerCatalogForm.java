@@ -79,11 +79,11 @@ public class OnlinerCatalogForm extends BaseForm {
 
     public void inputParams(){
         btnUsd.click();
-        new Select(txtProducer.getElement()).selectByValue(prm.getProperty("producer"));
+        new Select(txtProducer.getElement()).selectByVisibleText(prm.getProperty("producer"));
         txtMaxPrice.type(prm.getProperty("maxCost"));
         txtYear.type(prm.getProperty("year"));
-        new Select(txtMinDiagonal.getElement()).selectByValue(prm.getProperty("minDiagonal"));
-        new Select(txtMaxDiagonal.getElement()).selectByValue(prm.getProperty("maxDiagonal"));
+        new Select(txtMinDiagonal.getElement()).selectByVisibleText(prm.getProperty("minDiagonal"));
+        new Select(txtMaxDiagonal.getElement()).selectByVisibleText(prm.getProperty("maxDiagonal"));
     }
 
     public OnlinerCatalogForm() {
