@@ -50,8 +50,8 @@ public class OnlinerCatalogForm extends BaseForm {
         WebElement form = browser.getDriver().findElementByXPath(prm.getProperty("form_result"));
         List<WebElement> names = form.findElements(By.className(prm.getProperty("name_class")));
         for (WebElement elem : names){
-            (new WebDriverWait(browser.getDriver(), 10))
-                    .until(ExpectedConditions.textToBePresentInElement(elem, prm.getProperty("producer")));
+            logger.info(prm.getProperty("producer").toLowerCase());
+            logger.info(elem.getText().toLowerCase());
             assert prm.getProperty("producer").toLowerCase().contains(elem.getText().toLowerCase());
         }
         logger.info(prm.getProperty("correct_names"));
