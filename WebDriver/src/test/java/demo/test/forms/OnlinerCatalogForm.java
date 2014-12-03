@@ -2,7 +2,9 @@ package demo.test.forms;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import webdriver.BaseForm;
 import webdriver.PropertiesResourceManager;
 import webdriver.elements.Button;
@@ -47,7 +49,9 @@ public class OnlinerCatalogForm extends BaseForm {
     public void assertElementsCorrect(){
         WebElement form = browser.getDriver().findElementByXPath(prm.getProperty("form_result"));
         List<WebElement> names = form.findElements(By.className(prm.getProperty("name_class")));
+        (new WebDriverWait(browser.getDriver(), 10)).until(ExpectedConditions.visibilityOfAllElements(names));
         for (WebElement elem : names){
+
             assert prm.getProperty("producer").toLowerCase().contains(elem.getText().toLowerCase());
         }
         logger.info(prm.getProperty("correct_names"));
