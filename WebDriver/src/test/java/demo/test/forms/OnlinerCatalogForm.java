@@ -59,7 +59,7 @@ public class OnlinerCatalogForm extends BaseForm {
             int price = Integer.parseInt(res[0]);
             logger.info(elem.getText());
             logger.info("price: " + price);
-            assert price < Integer.parseInt(prm.getProperty("maxPrice"));
+            assert price < Integer.parseInt(prm.getProperty("maxCost"));
         }
         logger.info(prm.getProperty("correct_prices"));
         List<WebElement> descriptions = form.findElements(By.className(prm.getProperty("descr_class")));
