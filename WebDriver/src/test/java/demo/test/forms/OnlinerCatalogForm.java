@@ -49,9 +49,9 @@ public class OnlinerCatalogForm extends BaseForm {
     public void assertElementsCorrect(){
         WebElement form = browser.getDriver().findElementByXPath(prm.getProperty("form_result"));
         List<WebElement> names = form.findElements(By.className(prm.getProperty("name_class")));
-        (new WebDriverWait(browser.getDriver(), 10)).until(ExpectedConditions.visibilityOfAllElements(names));
         for (WebElement elem : names){
-
+            (new WebDriverWait(browser.getDriver(), 10))
+                    .until(ExpectedConditions.textToBePresentInElement(elem, prm.getProperty("producer")));
             assert prm.getProperty("producer").toLowerCase().contains(elem.getText().toLowerCase());
         }
         logger.info(prm.getProperty("correct_names"));
