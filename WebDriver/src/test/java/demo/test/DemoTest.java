@@ -23,6 +23,7 @@ public class DemoTest extends BaseTest {
         ocf.clickSubmit();
         ocf.assertIsPresent(By.xpath(prm.getProperty("tv_id")));
         logger.step(6);
+        browser.waitForPageToLoad();
         ocf.assertElementsCorrect();
         browser.exit();
 	}
